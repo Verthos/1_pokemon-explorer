@@ -2,13 +2,21 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 :root {
-    --background: #C8D3DE;
     --blue: #003d80;
     --cyan: #00ffff;
     --text-body: #969CB3;
     --shape: #FFFFFF;
     --green: #04D361;
     --soft-black: #262626;
+
+
+    /* new theme*/
+--blue-100: #0487D9;
+--blue-50: #63BBF2; 
+--green-100: #3B7302;
+--green-50: #65A603;
+--yellow-100 : #F2CB05;
+
 
 }
 
@@ -37,7 +45,7 @@ html {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: calc(100vw - (100vw - 100%));
-    background-color: var(--shape);
+    background-color: #c3dee9;
     -webkit-font-smoothing: antialiased;
 }
 

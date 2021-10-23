@@ -1,19 +1,23 @@
-import {Header} from "./components/Header"
-import {Footer} from "./components/Footer"
-import { StyledHome } from "./components/HomePage/styles";
 
+import React from "react";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { HomePage } from "./components/HomePage";
 import {GlobalStyle} from "./styles/global"
+import { SearchProvider } from "./hooks/useSearch";
 
 
 export function App() {
+  
+
   return (
-    <>
+    <SearchProvider>
       <Header/>
-      <StyledHome/>
+      <HomePage/>
       <Footer/>
       
 
       <GlobalStyle/> 
-    </>
+    </SearchProvider>
   );
 }
